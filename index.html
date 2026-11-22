@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firanol Gudisa | Full-Stack Web Developer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; scroll-behavior: smooth; }
+        body { background-color: #0f172a; color: #f8fafc; line-height: 1.6; }
+        header { background: #1e293b; padding: 18px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #334155; }
+        .logo { font-size: 20px; font-weight: bold; color: #38bdf8; }
+        .lang-btn { background: #38bdf8; color: #0f172a; border: none; padding: 6px 14px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 13px; }
+        .hero { text-align: center; padding: 70px 8%; max-width: 800px; margin: auto; }
+        .hero h1 { font-size: 36px; margin-bottom: 10px; color: #ffffff; }
+        .hero h2 { font-size: 20px; color: #38bdf8; margin-bottom: 18px; font-weight: 500; }
+        .hero p { color: #cbd5e1; font-size: 16px; margin-bottom: 28px; }
+        .btn { display: inline-block; background: #38bdf8; color: #0f172a; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #0284c7; color: #fff; }
+        section { padding: 45px 8%; max-width: 900px; margin: auto; }
+        .section-title { font-size: 24px; margin-bottom: 20px; color: #38bdf8; border-bottom: 2px solid #1e293b; padding-bottom: 8px; }
+        .card { background: #1e293b; padding: 24px; border-radius: 12px; border: 1px solid #334155; margin-bottom: 20px; }
+        .card h4 { font-size: 20px; margin-bottom: 8px; color: #fff; }
+        .card .sub-info { color: #38bdf8; font-size: 15px; font-weight: 600; margin-bottom: 10px; display: block; }
+        .card p { color: #cbd5e1; margin-bottom: 12px; font-size: 15px; }
+        .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+        .tag { background: #0f172a; color: #38bdf8; padding: 4px 12px; border-radius: 20px; font-size: 13px; border: 1px solid #38bdf8; }
+        #contact a { color: #38bdf8; text-decoration: none; }
+        footer { text-align: center; padding: 25px; color: #64748b; font-size: 14px; border-top: 1px solid #1e293b; margin-top: 30px; }
+        .am { display: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Firanol.dev</div>
+        <button class="lang-btn" onclick="toggleLang()" id="langBtn">አማርኛ</button>
+    </header>
+
+    <div class="hero">
+        <h1>Firanol Gudisa</h1>
+        <h2>
+            <span class="en">Full-Stack Web Developer (Front-End & Back-End)</span>
+            <span class="am">ፉል-ስታክ ዌብ ዴቨሎፐር (Front-End እና Back-End)</span>
+        </h2>
+        <p>
+            <span class="en">Computer Science graduate from Bridge International College, building complete end-to-end web applications—combining clean, responsive user interfaces with reliable server-side logic and databases.</span>
+            <span class="am">ከብሪጅ ኢንተርናሽናል ኮሌጅ በኮምፒውተር ሳይንስ የተመረቅኩ ስሆን ዘመናዊ የፍሮንት-ኤንድ ዲዛይንን ከጠንካራ የባክ-ኤንድ ሲስተም እና ዳታቤዝ ጋር በማቀናጀት ሙሉ ድረ-ገጾችን እገነባለሁ።</span>
+        </p>
+        <a href="#projects" class="btn">
+            <span class="en">View My Work</span>
+            <span class="am">ስራዎቼን ይመልከቱ</span>
+        </a>
+    </div>
+
+    <section id="education">
+        <h3 class="section-title">
+            <span class="en">Education</span>
+            <span class="am">የትምህርት ዝግጅት</span>
+        </h3>
+        <div class="card">
+            <h4>
+                <span class="en">BSc in Computer Science</span>
+                <span class="am">በኮምፒውተር ሳይንስ የባችለር ዲግሪ (BSc)</span>
+            </h4>
+            <span class="sub-info">
+                <span class="en">Bridge International College</span>
+                <span class="am">ብሪጅ ኢንተርናሽናል ኮሌጅ (Bridge International College)</span>
+            </span>
+            <p class="en">Focused on Full-Stack Web Development, Software Engineering, Data Structures, Algorithms, and Database Management Systems.</p>
+            <p class="am">በፉል-ስታክ ዌብ ዴቨሎፕመንት፣ ሶፍትዌር ኢንጂነሪንግ፣ ዳታ ስትራክቸር፣ አልጎሪዝም እና ዳታቤዝ ሲስተሞች ላይ ያተኮረ የትምህርት ዝግጅት።</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3 class="section-title">
+            <span class="en">Technical Skills</span>
+            <span class="am">ሙያዊ ክህሎቶች</span>
+        </h3>
+        <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Back-End Development</span>
+            <span class="tag">Databases & SQL</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">Git & GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3 class="section-title">
+            <span class="en">Featured Project</span>
+            <span class="am">የሰራሁት ፕሮጀክት</span>
+        </h3>
+        <div class="card">
+            <h4>
+                <span class="en">Amen Hotel (Kebede Siga Bet) - Holeta</span>
+                <span class="am">አሜን ሆቴል (ከበደ ስጋ ቤት) - ሆለታ</span>
+            </h4>
+            <p class="en">A complete hotel and traditional restaurant web platform featuring room listings, Siga Bet menu, bilingual toggle, and a reservation system (currently expanding with full back-end database integration).</p>
+            <p class="am">ለአሜን ሆቴል (ከበደ ስጋ ቤት) የተሰራ ድረ-ገጽ፤ የመኝታ ክፍሎች ዝርዝር፣ የስጋ ቤት ሜኑ፣ የቋንቋ መቀየሪያ እና የቦታ መያዣ ሲስተም ያካተተ (ባክ-ኤንድ እና ዳታቤዝ እየተገናኘለት ያለ)።</p>
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Back-End (In Progress)</span>
+            </div>
+            <a href="https://github.io" target="_blank" class="btn" style="padding: 9px 18px; font-size: 14px;">
+                <span class="en">Live Demo</span>
+                <span class="am">ድረ-ገጹን ይዩ</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3 class="section-title">
+            <span class="en">Contact Me</span>
+            <span class="am">ያግኙኝ</span>
+        </h3>
+        <div class="card">
+            <p><strong>Email:</strong> <a href="mailto:kukugudisa@gmail.com">kukugudisa@gmail.com</a></p>
+            <p><strong><span class="en">Phone:</span><span class="am">ስልክ:</span></strong> <a href="tel:+251962464999">0962464999</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com" target="_blank">://github.com</a></p>
+            <p><strong><span class="en">Location:</span><span class="am">አድራሻ:</span></strong> Holeta / Welmera, Ethiopia</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Firanol Gudisa. <span class="en">All rights reserved.</span><span class="am">መብቱ በህግ የተጠበቀ ነው።</span></p>
+    </footer>
+
+    <script>
+        let isAmharic = false;
+        function toggleLang() {
+            isAmharic = !isAmharic;
+            document.querySelectorAll('.en').forEach(el => el.style.display = isAmharic ? 'none' : 'inline');
+            document.querySelectorAll('.am').forEach(el => el.style.display = isAmharic ? 'inline' : 'none');
+            document.getElementById('langBtn').textContent = isAmharic ? 'English' : 'አማርኛ';
+        }
+    </script>
+</body>
+</html>
